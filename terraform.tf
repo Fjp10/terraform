@@ -1,13 +1,5 @@
 terraform {
 
-  cloud {
-    organization = "FJP"
-
-    workspaces {
-      name = "FJP-test"
-    }
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
