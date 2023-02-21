@@ -26,13 +26,3 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
   }
 }
-
-resource "aws_s3_bucket" "piyush_rds_snapshots" {
-  bucket = "piyush-rds-snap"
-  acl    = "private"
-
-  tags = {
-    Name        = "RDS snapshots"
-    Environment = "dev"
-  }
-}
