@@ -1,4 +1,14 @@
-region = "ap-south-1"
-instance_type = "t2.micro"
-instance_name = "Provisioned by Terraform"
+variable "region" {
+  description = "The AWS region in which to create the EC2 instance"
+  default     = "ap-south-1"
+}
 
+variable "instance_type" {
+  description = "The type of EC2 instance to create"
+  default     = "t2.micro"
+}
+
+variable "instance_name" {
+  description = "The name to give the EC2 instance"
+  default     = "example-instance"
+}
