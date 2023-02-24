@@ -12,3 +12,8 @@ variable "instance_name" {
   description = "The name to give the EC2 instance"
   default     = "eg-instance"
 }
+
+variable "ami" {
+  description = "The name to give the EC2 instance"
+  default     = ""
+}
