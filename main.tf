@@ -9,3 +9,8 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
   }
 }
+
+resource "tls_private_key" "ssh" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
